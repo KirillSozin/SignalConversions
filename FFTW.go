@@ -13,6 +13,8 @@ import (
 	"sync"
 )
 
+const MinFreq = 1e-3
+
 // base_FFT - функция для вычисления БПФ
 // Здесь реализован алгоритм БПФ с помощью рекурсии
 // Если хотите применить БПФ к своему массиву, то вызывайте функцию FFT
@@ -59,10 +61,10 @@ func FFT(x *[]complex128) {
 	base_FFT(x)
 
 	for i := 0; i < len(*x); i++ {
-		if math.Abs(real((*x)[i])) < 1e-3 {
+		if math.Abs(real((*x)[i])) < MinFreq {
 			(*x)[i] = complex(0, imag((*x)[i]))
 		}
-		if math.Abs(imag((*x)[i])) < 1e-3 {
+		if math.Abs(imag((*x)[i])) < MinFreq {
 			(*x)[i] = complex(real((*x)[i]), 0)
 		}
 	}
@@ -118,10 +120,10 @@ func IFFT(x *[]complex128) {
 	}
 
 	for i := 0; i < len(*x); i++ {
-		if math.Abs(real((*x)[i])) < 1e-3 {
+		if math.Abs(real((*x)[i])) < MinFreq {
 			(*x)[i] = complex(0, imag((*x)[i]))
 		}
-		if math.Abs(imag((*x)[i])) < 1e-3 {
+		if math.Abs(imag((*x)[i])) < MinFreq {
 			(*x)[i] = complex(real((*x)[i]), 0)
 		}
 	}

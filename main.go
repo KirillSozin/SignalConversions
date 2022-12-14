@@ -30,5 +30,5 @@ func main() {
 
 	fmt.Println("frequencies:", f)
 	// строим график фильтрации
-	PlotSignal(GenerateComplexSignal(f, a, p, time, step), time, "filtered signal", "filteredSignal.png")
+	PlotSignal(GenerateComplexSignal(f, a, p, time, step), time, "filtered signal", "filter.png")
 }

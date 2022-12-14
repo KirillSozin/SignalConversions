@@ -27,7 +27,7 @@
 
 До фильтрации, файл `noise.png`:
 
-![Image alt](https://github.com/KirillSozin/SignalConversions/blob/master/noisy.png)
+![Image alt](https://github.com/KirillSozin/SignalConversions/blob/master/noise.png)
 
 После фильтрации, файл `filtered.png`:
 

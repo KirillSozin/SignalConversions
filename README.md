@@ -27,11 +27,11 @@
 
 До фильтрации, файл `noise.png`:
 
-![Image alt](https://github.com/KirillSozin/SignalConversions/blob/main/noise.png)
+![Image alt](https://github.com/KirillSozin/SignalConversions/blob/master/noisy.png)
 
 После фильтрации, файл `filtered.png`:
 
-![Image alt](https://github.com/KirillSozin/SignalConversions/blob/main/filtered.png)
+![Image alt](https://github.com/KirillSozin/SignalConversions/blob/master/filtered.png)
 
 ## Сборка и запуск
 
